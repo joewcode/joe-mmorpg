@@ -1,0 +1,387 @@
+html { position: relative; min-height: 100%; min-width: 100%; overflow: hidden; }
+body { margin-bottom: 32px; overflow: hidden; }
+#footer {z-index:2; position: absolute; bottom: 0; width: 100%; height: 32px; background-color: #f5f5f5;}
+.container { _width: auto; max-width: 680px; padding: 0 15px; }
+
+.tooltip {_position: absolute;
+  _z-index: 999;
+	 }
+
+/* Блок чата и листа онлайна */
+.chatBox { width: 500px; height: 220px;
+	left: 1px; bottom: 33px; display: block; overflow: auto;
+	background-image: url('/img/bg.gif'); opacity: 0.9; }
+.chlistBox { width: 300px; height: 250px;
+	right: 1px; bottom: 33px; display: block; overflow: auto;
+	background-image: url('/img/bg.gif'); _opacity: 0.9;}
+
+.MAP{ position: absolute; 
+	height: 92%; width: 100%;
+	top: 51px;
+	bottom: 32px;
+	left: 0px;
+	z-index: 1;
+}
+
+
+.chlistAlgn
+{
+    cursor:pointer;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 31;
+}
+
+	
+	
+
+/*  Всплывающее окошко  */
+.des_showBox { _width: 100px; _height: 100px; 
+	position: absolute;
+	z-index: 30;
+	max-width: 500px;
+	_border: 1px black;
+}
+
+/* Верхняя часть */
+.des_header {
+	
+}
+/* Основная игровая область */
+.des_main {
+	
+}
+/* Чат лист и чат */
+.des_chlist {
+	
+}
+/* Подвал */
+.des_footer {
+	
+}
+
+/* --------- Pers ----------- */
+
+.MyPers
+{
+	width: 372px; height: 457px;
+	top: 60px;
+	left: 30px;
+	border: 0px;
+
+}
+.mp_back
+{
+	width: 371px; height: 426px;
+	
+	font-family: Times New Roman,Times New Roman,Times,serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	color: #FD5;
+	
+	background: url('/img/desing/pers/ordinary_board.png') no-repeat;
+	background-size: 100% 100%;
+}
+.mp_imgfull
+{
+	top: 32px; 
+	left: 7px;
+	Width: 356px; 
+	Height: 386px;
+	background: url('/img/desing/pers/char_bg.png') no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+}
+.mp_plus{ width: 17px; height: 17px; position: absolute; }
+.mp_plus:active { background: url('/img/desing/pers/plus_gen.png') no-repeat bottom; }
+
+.mp_minus{ width: 17px; height: 17px; position: absolute; }
+.mp_minus:active { background: url('/img/desing/pers/minus_gen.png') no-repeat bottom; }
+
+.mp_help{ width: 24px; height: 24px; position: absolute; }
+.mp_help:active { background: url('/img/desing/pers/help.png') no-repeat bottom; }
+
+.mp_button{
+	position: absolute;
+    height:24px;
+    width:90px;
+	
+	display: block;
+	background-color: transparent;
+	background-image: url('/img/desing/pers/button_gen.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #FFFFFF;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+	padding-top: 4px;
+	cursor:pointer;
+	font-weight: bold;
+	
+}
+.mp_button:active { background-image: url('/img/desing/pers/button_gen.png'); }
+
+.mp_labelStr{
+	_border: 2;
+	color: #FD5;
+	font-size:11px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	_text-align:center;
+}
+
+
+.MyInv
+{
+	width: 372px; height: 457px;
+	top: 60px;
+	left: 410px;
+	border: 0px;
+	background-color: #F54F5F;
+}
+
+.MyTalant
+{
+	width: 372px; height: 457px;
+	top: 60px;
+	left: 800px;
+	border: 0px;
+	background-color: #A54F5A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#chButton
+{
+	height: 32px;
+	width:100%;
+	background-image: url('/img/desing/but/bg_bc.gif');
+
+}
+
+#chlistBox7
+{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.chb_left_bc
+{
+	height: 32px;
+	width: 19px;
+    margin-left: -0.98em;
+	background: url('/img/desing/but/left_bc.gif') no-repeat;
+}
+
+.chb_sett
+{
+	height: 32px;
+	width: 50px;
+	vertical-align: middle;
+	display: table-cell;
+	margin-left: -2em;
+	
+	font-family: Tahoma;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#TIME {
+	font-family: Verdana, Tahoma, Arial;
+	font-size: 12px;
+	color: #FFFFFF;
+	border-style: none; 
+	background-color: transparent;
+	cursor:pointer;
+	font-style:italic;
+
+}
+
+#ChatMessage {
+	border-width: 1px 1px 1px 3px;
+	border-color: #6A6D56;
+	border-style: none none none double;
+	padding: 0px 0px 0px 5px;
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	height: 100%;
+}
+
+#main_up
+{
+	width: 100vw;
+	height: 58px;
+	margin-left: -1.1em;
+	background: url('/img/desing/upimg/bg_top_up.gif') repeat;
+	display: inline-block;
+
+}
+#main_up .mu_left
+{
+	width: 50%;
+	float: left;
+	background: url('/img/desing/upimg/left_top_up2.gif') no-repeat left top;
+	display: inline-block;
+	
+	padding: 23px;
+	padding-left: 100px;
+}
+#main_up .mu_mid
+{
+	width: 375px;
+	height: 58px;
+	margin: 0px auto;
+	background: url('/img/desing/upimg/middle_top_up.gif') repeat;
+	text-align: center;
+	
+}
+#main_up .mu_right
+{
+	width: 50%;
+	float: left;
+	background: url('/img/desing/upimg/right_top_up2.gif') no-repeat right top;
+	display: inline-block;
+	text-align: right;
+	
+	padding: 23px;
+	padding-right: 100px;
+}
+
+
+
+.chat_time
+{
+	font-family: Tahoma;
+	color: #FFFFFF;
+	font-size: 11px;
+}
+
+
+.head  {
+	border-style: none;
+	background-color: transparent;
+	font-family: Calibri , Verdana, Arial, Tahoma;
+	FONT-SIZE: 13px;
+	COLOR: #FFF;
+	cursor: pointer;
+	font-weight: bold;
+}
+.head:disabled {
+	border-style: none;
+	background-color: transparent;
+	font-family: Calibri , Verdana, Arial, Tahoma;
+	FONT-SIZE: 13px;
+	COLOR: #666;
+	cursor: default;
+	font-weight: bold;
+}
+
+/* Скрыть элемент на страничке */
+.jhide { display: none; }
+
+.JDiaConsol
+{
+	top: 60px;
+	left: 60px;
+}
+
+.JDiaPers
+{
+	top: 60px;
+	left: 30px;
+}
+
+.JDiaInv
+{
+	top: 60px;
+	left: 440px;
+}
+
+
+
+#GamePlay
+{
+	_display: block;
+	width: 100%;
+	height: 85%;
+	overflow-y: auto;
+}
+
+/* --- */
+.cnt{margin:0 auto 0 auto;padding:0;text-align:center;width:321px;}
+.cnt .bpanel{padding:0;position:relative;}
+.cnt .bpanel .blank{height:32px;position:absolute;width:32px;}
+.caption{color:#FD5;font-size:20px;margin:0;padding:0;font-family:Times New Roman,Times New Roman,Times,serif;font-weight:bold;position:absolute;text-align:center;}
+.ccnt{margin:0 auto 0 auto;padding:0;text-align:center;width:314px;}
+.ccnt .bpanel{background-color:#135;padding:0;position:relative;}
+.ccnt .bpanel .blank{height:32px;position:absolute;width:32px;}
+.ccnt .bpanel .tblank{position:absolute;font-size:12px;text-align:left;}
+.button_old{background:url("/img/desing/mainbox/button_s.png") no-repeat scroll 0 0 transparent;position:absolute;width:75px;height:27px;padding-top:7px;color:#FFCB3B;font-weight:bold;text-align:center;cursor:pointer;}
+.button_old:hover{background:url("/img/desing/mainbox/button_h.png") no-repeat scroll 0 0 transparent;}
+.button_gen{background:url("/img/desing/mainbox/button_s.png") no-repeat scroll 0 0 transparent;position:absolute;width:69px;height:23px;padding-top:3px;color:#FFCB3B;font-weight:bold;text-align:center;cursor:pointer;}
+.button_gen:hover{background:url("/img/desing/mainbox/button_h.png") no-repeat scroll 0 0 transparent;}
+.ccnt .bpanel .blank2{border:1px solid #444;height:32px;position:absolute;width:32px;}
+.ccnt .bpanel .blank_btn{font-size:13px;font-weight:bold;height:100%;margin:0;padding:0;position:absolute;text-align:center;width:100%;}
+.ccnt .bpanel .characterist{color:#FD5;font-size:13px;font-weight:bold;margin:0;padding:0;position:absolute;text-align:center;}
+.ccnt .bpanel .hpsp_label{border:2;color:#FD5;font-size:12px;margin:0;padding:0;position:absolute;text-align:center;}
+.ccnt .bpanel .hpsp{color:White;font-size:12px;position:absolute;text-align:center;}
+.ccnt .bpanel .petsa_label{border:2;borders:1px solid #444;color:#FD5;font-size:12px;font-weight:bold;margin:0;padding:0;position:absolute;text-align:center;}
+.ccnt .bpanel .petsa{borders:1px solid #444;color:White;font-size:12px;font-weight:bold;position:absolute;text-align:center;}
+.ccnt .bpanel .params{color:White;font-size:11px;position:absolute;text-align:center;}
+.ccnt .bpanel .cctable{color:#FD5;font-size:11.5px;margin:0;padding:0;position:absolute;text-align:left;}
+.ccnt .bpanel .cctable .tda{text-align:left;width:15%;}
+.ccnt .bpanel .cctable .tdb{text-align:right;width:20%;}
+.ccnt .bpanel .cctable .tdc{text-align:right;width:15%;}
+.ccnt .bivalue{color:Red;margin:0;padding:0;text-align:left;position:absolute;font-size:12px;}
+.ccnt .bpanel .cctable .bon{color:White;margin:0;padding:0;text-align:left;}
+.ivalue{background:#CCC;font:10px Tahoma;font-weight:bold;height:13px;padding:0;width:26px;}
+
+
+
+
+
+
+

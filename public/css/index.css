@@ -1,0 +1,52 @@
+
+
+a.Main 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #eee;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	text-align: center;
+	font-family: "Trebuchet MS",Verdana, Geneva, Arial, Helvetica, sans-serif;
+	z-index: 50;
+	font-size: 12px;
+	text-decoration: none;
+}
+a.Main:hover
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #eee;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	text-align: center;
+	font-family: "Trebuchet MS",Verdana, Geneva, Arial, Helvetica, sans-serif;
+	z-index: 50;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+   .indexFont {
+		   color: #4E312D;
+		   font-family: Arial;
+		   font-size: 11px;
+	   }
+	   .loginBox{
+			border-width: 1px;
+			border-color: #717171;
+			border-style: solid;
+			font-family: Tahoma;
+			color: #4E312D;
+			font-size: 11px;
+			background-color: transparent;
+			background-image: url('/public/img/emp.gif');
+			cursor:pointer;
+	   }
+
+
+
+
